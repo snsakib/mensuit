@@ -1,0 +1,29 @@
+@import '../../assets/styles/variables';
+@import "../../assets/styles/helpers";
+
+#navbar {
+  @extend .page;
+  background-color: $bg-white;
+  height: 4rem;
+  font-size: 1.6rem;
+
+  .menu {
+
+    &>span {
+      &:not(:last-of-type) {
+        border-right: 1px solid #ccc;
+      }
+
+      &:hover {
+        background-color: $bg-white-dark;
+        cursor: pointer;
+      }
+
+    }
+  }
+
+  .cart div:hover {
+    background-color: $bg-white-dark;
+    cursor: pointer;
+  }
+}

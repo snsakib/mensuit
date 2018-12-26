@@ -1,0 +1,33 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/helpers";
+@import "../../assets/styles/mixins";
+
+#hero-image {
+  @extend .page;
+  height: 40rem;
+  color: white;
+  background: $bg-white url("../../assets/images/bg-image.jpg") top no-repeat fixed;
+
+  .hero-text {
+    width: 28rem;
+
+    @include breakpointMin(md) {
+      width: 50rem;
+    }
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    margin: 2rem 0;
+  }
+
+  button {
+    width: 20rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+}

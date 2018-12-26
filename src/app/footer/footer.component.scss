@@ -1,0 +1,31 @@
+@import '../../assets/styles/variables';
+@import "../../assets/styles/helpers";
+
+#footer {
+  @extend .page;
+  background-color: $bg-black;
+  height: 10rem;
+
+  form {
+    width: 30rem;
+
+    input {
+      height: 4rem;
+      font-size: 1.5rem;
+      border: none;
+      padding: 10px;
+      background-color: $bg-black-light;
+      color: white;
+    }
+
+    button {
+      border: none;
+    }
+  }
+
+  .contact {
+    font-size: 3rem;
+    width: 15rem;
+    color: white;
+  }
+}

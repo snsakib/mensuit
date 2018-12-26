@@ -1,0 +1,51 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/helpers";
+
+#header {
+  @extend .page;
+  background-color: $bg-black;
+  height: 5rem;
+  font-size: 1.5rem;
+  color: gray;
+
+  .btn-group {
+    #button-basic {
+      border: none;
+      font-size: 2rem;
+    }
+
+    #dropdown-basic {
+      width: 28rem;
+      font-size: 1.8rem;
+      background-color: $bg-black;
+
+      .dropdown-item {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        color: white;
+
+        &:hover {
+          background-color: $bg-black-light;
+        }
+      }
+    }
+  }
+
+  h1 {
+    color: $primary-color;
+  }
+
+  #login {
+
+    i,
+    span {
+      color: gray;
+
+      &:hover {
+        background-color: $bg-black-light;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}

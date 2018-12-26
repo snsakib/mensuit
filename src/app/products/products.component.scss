@@ -1,0 +1,44 @@
+@import '../../assets/styles/variables';
+@import "../../assets/styles/helpers";
+
+#products {
+  @extend .page;
+  background-color: $bg-white;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  height: auto;
+
+  .heading {
+    width: 100%;
+    font-size: 1.8rem;
+
+    button {
+      font-size: 1.5rem;
+    }
+  }
+
+  .items {
+    width: 100%;
+
+    .card {
+      border-radius: 3px;
+      overflow: hidden;
+
+      .card-footer {
+        // border: 1px solid red;
+        font-size: 2rem;
+        height: 4rem;
+
+        .actions {
+          // border: 1px solid red;
+          color: gray;
+
+          i:hover {
+            color: black;
+            background-color: $bg-white-dark;
+          }
+        }
+      }
+    }
+  }
+}
